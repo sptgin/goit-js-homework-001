@@ -1,4 +1,4 @@
-const message = 'JS';
+const message = 'JS - start';
 
 console.log(message);
 
@@ -152,30 +152,155 @@ console.log(message);
 // console.log(isNumberNotInRange(1, 100, 20));
 
 // ---------------------------------- Module 001 Task 024
-function getDiscount(totalSpent) {
-  const BASE_DISCOUNT = 0;
-  const BRONZE_DISCOUNT = 0.02;
-  const SILVER_DISCOUNT = 0.05;
-  const GOLD_DISCOUNT = 0.1;
-  let discount;
-  // Change code below this line
-  switch (totalSpent) {
-    case 50000:
-      discount = 0.1;
-      break;
-    case 20000:
-      discount = 0.05;
-      break;
-    case 5000:
-      discount = 0.02;
-      break;
-    default:
-      diccount = 0;
-  }
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 0.02;
+//   const SILVER_DISCOUNT = 0.05;
+//   const GOLD_DISCOUNT = 0.1;
+//   let discount;
+//   // Change code below this line
+//   if (totalSpent >= 50000) {
+//     discount = GOLD_DISCOUNT;
+//   } else {
+//     if (totalSpent >= 20000) {
+//       discount = SILVER_DISCOUNT;
+//     } else {
+//       if (totalSpent >= 5000) {
+//         discount = BRONZE_DISCOUNT;
+//       } else {
+//         discount = BASE_DISCOUNT;
+//       }
+//     }
+//   }
+//   // Change code above this line
+//   return discount;
+// }
+// console.log(getDiscount(1000));
+// ---------------------------------- Module 001 Task 025
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
 
-  // Change code above this line
-  return discount;
-}
-console.log(getDiscount(500000));
+//   message =
+//     ordered > available
+//       ? 'Not enough goods in stock!'
+//       : 'The order is accepted, our manager will contact you';
+
+//   // Change code above this line
+//   return message;
+// }
+// console.log(checkStorage(10, 100));
+// ---------------------------------- Module 001 Task 026
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
+//   // Change code below this line
+//   message =
+//     password === ADMIN_PASSWORD
+//       ? 'Access is allowed'
+//       : 'Access denied, wrong password!';
+//   // Change code above this line
+//   return message;
+// }
+
+// console.log(checkPassword('22222'));
+// console.log(checkPassword('jqueryismyjam'));
+// ---------------------------------- Module 001 Task 027
+// function getSubscriptionPrice(type) {
+//   let price;
+//   // Change code below this line
+
+//   switch (
+//     type // Change this line
+//   ) {
+//     case 'starter': // Change this line
+//       price = 0; // Change this line
+//       break;
+
+//     case 'professional': // Change this line
+//       price = 20; // Change this line
+//       break;
+
+//     case 'organization': // Change this line
+//       price = 50; // Change this line
+//       break;
+//   }
+
+//   // Change code above this line
+//   return price;
+// }
+// console.log(getSubscriptionPrice('professional'));
+// ---------------------------------- Module 001 Task 028
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
+//   // Change code below this line
+//   switch (password) {
+//     case null:
+//       message = 'Canceled by user!';
+//       break;
+//     case ADMIN_PASSWORD:
+//       message = 'Welcome!';
+//       break;
+//     default:
+//       message = 'Access denied, wrong password!';
+//   }
+
+//   // Change code above this line
+//   return message;
+// }
+// console.log(checkPassword('jqueryismyjam'));
+// ---------------------------------- Module 001 Task 029
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+//   switch (country) {
+//     case 'China':
+//       message = 'Shipping to China will cost 100 credits';
+//       break;
+//     case 'Chile':
+//       message = 'Shipping to Chile will cost 250 credits';
+//       break;
+//     case 'Australia':
+//       message = 'Shipping to Australia will cost 170 credits';
+//       break;
+//     case 'Jamaica':
+//       message = 'Shipping to Jamaica will cost 120 credits';
+//       break;
+//     default:
+//       message = 'Sorry, there is no delivery to your country';
+//   }
+//   // Change code above this line
+//   return message;
+// }
+// console.log(getShippingCost('USSR'));
+// ---------------------------------- Module 001 Task 030
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+//   return message;
+// }
+// console.log(getNameLength('1234567890'));
+// console.log(getNameLength(''));
+// ---------------------------------- Module 001 Task 031
+// const courseTopic = 'JavaScript essentials';
+// // Change code below this line
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+// // Change code above this line
+// console.log(courseTopic);
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
+// ---------------------------------- Module 001 Task 032
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+
+//   return substring;
+// }
+// console.log(getSubstring('1234567890', 1));
+// ---------------------------------- Module 001 Task 033
 // ------------------------------------------------------
-console.log('The End.');
+console.log('JS - The End.');

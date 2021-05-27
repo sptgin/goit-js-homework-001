@@ -302,5 +302,109 @@ console.log(message);
 // }
 // console.log(getSubstring('1234567890', 1));
 // ---------------------------------- Module 001 Task 033
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   result =
+//     message.length > maxLength ? message.slice(0, maxLength) + '...' : message;
+//   /// Change code above this line
+//   return result;
+// }
+// console.log(formatMessage('Curabitur ligula sapien', 16));
+// ---------------------------------- Module 001 Task 034
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+
+//   return normalizedInput;
+// }
+// console.log(normalizeInput('QAWSEDrftgyhUJIKOL'));
+// ---------------------------------- Module 001 Task 035
+// function checkForName(fullName, name) {
+//   const result = fullName.includes(name); // Change this line
+//   return result;
+// }
+// console.log(checkForName('John Smith', 'Smith'));
+// ---------------------------------- Module 001 Task 036
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+
+//   result =
+//     message.toLowerCase().includes('spam') ||
+//     message.toLowerCase().includes('sale');
+//   // Change code above this line
+//   return result;
+// }
+// console.log(checkForSpam('qwertyuiop Sale'));
+
+// ---------------------------------- Module 002 Task 001
+// function checkAge(age) {
+//   if (age >= 18) {
+//     // Change this line
+//     return 'You are an adult';
+//   }
+
+//   return 'You are a minor';
+// }
+// console.log(checkAge(4));
+// ---------------------------------- Module 002 Task 002
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   // Change code below this line
+
+//   if (password === ADMIN_PASSWORD) {
+//     return 'Welcome!';
+//   }
+
+//   return 'Access denied, wrong password!';
+
+//   // Change code above this line
+// }
+// console.log(checkPassword('12345'));
+// console.log(checkPassword('jqueryismyjam'));
+// ---------------------------------- Module 002 Task 003
+function checkStorage(available, ordered) {
+  // Change code below this line
+
+  if (ordered === 0) return 'Your order is empty!';
+  if (ordered > available)
+    return 'Your order is too large, not enough goods in stock!';
+
+  return 'The order is accepted, our manager will contact you';
+  // Change code above this line
+}
+console.log(checkStorage(100, 500));
+console.log(checkStorage(100, 100));
+console.log(checkStorage(100, 0));
+// ---------------------------------- Module 002 Task 004
+// ---------------------------------- Module 002 Task 005
+// ---------------------------------- Module 002 Task 006
+// ---------------------------------- Module 002 Task 007
+// ---------------------------------- Module 002 Task 008
+// ---------------------------------- Module 002 Task 009
+// ---------------------------------- Module 002 Task 010
+// ---------------------------------- Module 002 Task 011
+// ---------------------------------- Module 002 Task 012
+// ---------------------------------- Module 002 Task 013
+// ---------------------------------- Module 002 Task 014
+// ---------------------------------- Module 002 Task 015
+// ---------------------------------- Module 002 Task 016
+// ---------------------------------- Module 002 Task 017
+// ---------------------------------- Module 002 Task 018
+// ---------------------------------- Module 002 Task 019
+// ---------------------------------- Module 002 Task 020
+// ---------------------------------- Module 002 Task 021
+// ---------------------------------- Module 002 Task 022
+// ---------------------------------- Module 002 Task 023
+// ---------------------------------- Module 002 Task 024
+// ---------------------------------- Module 002 Task 025
+// ---------------------------------- Module 002 Task 026
+// ---------------------------------- Module 002 Task 027
+// ---------------------------------- Module 002 Task 028
+// ---------------------------------- Module 002 Task 029
+// ---------------------------------- Module 002 Task 030
+// ---------------------------------- Module 002 Task 031
+// ---------------------------------- Module 002 Task 032
+
 // ------------------------------------------------------
 console.log('JS - The End.');

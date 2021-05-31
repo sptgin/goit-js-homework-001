@@ -373,9 +373,12 @@ function checkStorage(available, ordered) {
   return 'The order is accepted, our manager will contact you';
   // Change code above this line
 }
-console.log(checkStorage(100, 500));
-console.log(checkStorage(100, 100));
-console.log(checkStorage(100, 0));
+console.log(checkStorage(100, 50));
+console.log(checkStorage(100, 130));
+console.log(checkStorage(70, 0));
+console.log(checkStorage(200, 20));
+console.log(checkStorage(200, 220));
+console.log(checkStorage(150, 0));
 // ---------------------------------- Module 002 Task 004
 // ---------------------------------- Module 002 Task 005
 // ---------------------------------- Module 002 Task 006

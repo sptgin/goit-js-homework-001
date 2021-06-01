@@ -363,30 +363,90 @@ console.log(message);
 // console.log(checkPassword('12345'));
 // console.log(checkPassword('jqueryismyjam'));
 // ---------------------------------- Module 002 Task 003
-function checkStorage(available, ordered) {
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+
+//   if (ordered === 0) return 'Your order is empty!';
+//   if (ordered > available)
+//     return 'Your order is too large, not enough goods in stock!';
+
+//   return 'The order is accepted, our manager will contact you';
+//   // Change code above this line
+// }
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
+// console.log(checkStorage(70, 0));
+// console.log(checkStorage(200, 20));
+// console.log(checkStorage(200, 220));
+// console.log(checkStorage(150, 0));
+// ---------------------------------- Module 002 Task 004
+// Change code below this line
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+// console.log(fruits);
+// ---------------------------------- Module 002 Task 005
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// // Change code below this line
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[3];
+
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
+// ---------------------------------- Module 002 Task 006
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// // Write your code under this line
+// fruits[1] = 'peach';
+// fruits[3] = 'banana';
+
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
+// ---------------------------------- Module 002 Task 007
+// const fruits = ['apple', 'peach', 'pear', 'banana'];
+
+// // Change code below this line
+// const fruitsArrayLength = fruits.length;
+// console.log(fruitsArrayLength);
+// ---------------------------------- Module 002 Task 008
+// const fruits = ['apple', 'peach', 'pear', 'banana'];
+
+// // Change code below this line
+
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+
+// console.log(lastElement);
+// ---------------------------------- Module 002 Task 009
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   return [array[0], array[array.length - 1]];
+
+//   // Change code above this line
+// }
+// console.log(getExtremeElements(['apple', 'peach', 'pear', 'banana']));
+// ---------------------------------- Module 002 Task 010
+// function splitMessage(message, delimeter) {
+//   let words;
+//   // Change code below this line
+//   words = message.split(delimeter);
+//   // Change code above this line
+//   return words;
+// }
+// console.log(splitMessage('Mango hurries to the train', ' '));
+// ---------------------------------- Module 002 Task 011
+function calculateEngravingPrice(message, pricePerWord) {
   // Change code below this line
+  return message.split(' ').length * pricePerWord;
 
-  if (ordered === 0) return 'Your order is empty!';
-  if (ordered > available)
-    return 'Your order is too large, not enough goods in stock!';
-
-  return 'The order is accepted, our manager will contact you';
   // Change code above this line
 }
-console.log(checkStorage(100, 50));
-console.log(checkStorage(100, 130));
-console.log(checkStorage(70, 0));
-console.log(checkStorage(200, 20));
-console.log(checkStorage(200, 220));
-console.log(checkStorage(150, 0));
-// ---------------------------------- Module 002 Task 004
-// ---------------------------------- Module 002 Task 005
-// ---------------------------------- Module 002 Task 006
-// ---------------------------------- Module 002 Task 007
-// ---------------------------------- Module 002 Task 008
-// ---------------------------------- Module 002 Task 009
-// ---------------------------------- Module 002 Task 010
-// ---------------------------------- Module 002 Task 011
+
+console.log(calculateEngravingPrice('Web-development is creative work', 40));
 // ---------------------------------- Module 002 Task 012
 // ---------------------------------- Module 002 Task 013
 // ---------------------------------- Module 002 Task 014

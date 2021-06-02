@@ -439,18 +439,47 @@ console.log(message);
 // }
 // console.log(splitMessage('Mango hurries to the train', ' '));
 // ---------------------------------- Module 002 Task 011
-function calculateEngravingPrice(message, pricePerWord) {
-  // Change code below this line
-  return message.split(' ').length * pricePerWord;
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Change code below this line
+//   return message.split(' ').length * pricePerWord;
 
-  // Change code above this line
-}
-
-console.log(calculateEngravingPrice('Web-development is creative work', 40));
+//   // Change code above this line
+// }
+// console.log(calculateEngravingPrice('1 2 3 4 5 6 7 8 9 0', 40));
+// console.log(calculateEngravingPrice('Web-development is creative work', 40));
 // ---------------------------------- Module 002 Task 012
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+//   // Change code below this line
+//   string = array.join(delimeter);
+
+//   // Change code above this line
+//   return string;
+// }
+// console.log(makeStringFromArray(['top', 'picks', 'for', 'you'], '_'));
 // ---------------------------------- Module 002 Task 013
+// function slugify(title) {
+//   // Change code below this line
+//   return title.split(' ').join('-').toLowerCase();
+
+//   // Change code above this line
+// }
+// console.log(slugify('Ten secrets of JavaScript'));
 // ---------------------------------- Module 002 Task 014
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(-3);
+// console.log(firstTwoEls);
+// console.log(nonExtremeEls);
+// console.log(lastThreeEls);
 // ---------------------------------- Module 002 Task 015
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+// const allClients = oldClients.concat(newClients); // Change this line
+// console.log(allClients);
 // ---------------------------------- Module 002 Task 016
 // ---------------------------------- Module 002 Task 017
 // ---------------------------------- Module 002 Task 018

@@ -467,7 +467,6 @@ console.log(message);
 // console.log(slugify('Ten secrets of JavaScript'));
 // ---------------------------------- Module 002 Task 014
 // const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
-
 // // Change code below this line
 // const firstTwoEls = fruits.slice(0, 2);
 // const nonExtremeEls = fruits.slice(1, fruits.length - 1);
@@ -481,10 +480,49 @@ console.log(message);
 // const allClients = oldClients.concat(newClients); // Change this line
 // console.log(allClients);
 // ---------------------------------- Module 002 Task 016
+// function makeArray(firstArray, secondArray, maxLength) {
+//   return firstArray.concat(secondArray).slice(0, maxLength);
+// }
+// console.log(makeArray(['Mango', 'Poly', 'Houston'], ['Ajax', 'Chelsea'], 4));
 // ---------------------------------- Module 002 Task 017
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) {
+//   // Change this line
+//   console.log(i);
+// }
 // ---------------------------------- Module 002 Task 018
+// function calculateTotal(number) {
+//   // Change code below this line
+//   let total = 0;
+//   for (let i = 0; i <= number; i += 1) {
+//     total += i;
+//   }
+//   return total;
+//   // Change code above this line
+// }
+// console.log(calculateTotal(22));
 // ---------------------------------- Module 002 Task 019
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) {
+//   // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
 // ---------------------------------- Module 002 Task 020
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+  for (index of order) {
+    total += order[index];
+    console.log(order[i]);
+  }
+  // Change code above this line
+  return total;
+}
+console.log(calculateTotalPrice([12, 85, 37, 4]));
 // ---------------------------------- Module 002 Task 021
 // ---------------------------------- Module 002 Task 022
 // ---------------------------------- Module 002 Task 023

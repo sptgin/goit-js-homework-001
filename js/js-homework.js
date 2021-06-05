@@ -512,29 +512,266 @@ console.log(message);
 //   console.log(fruit);
 // }
 // ---------------------------------- Module 002 Task 020
-function calculateTotalPrice(order) {
-  let total = 0;
-  // Change code below this line
-  for (index of order) {
-    total += order[index];
-    console.log(order[i]);
-  }
-  // Change code above this line
-  return total;
-}
-console.log(calculateTotalPrice([12, 85, 37, 4]));
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (const index of order) {
+//     total += index;
+//   }
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
 // ---------------------------------- Module 002 Task 021
-// ---------------------------------- Module 002 Task 022
-// ---------------------------------- Module 002 Task 023
-// ---------------------------------- Module 002 Task 024
-// ---------------------------------- Module 002 Task 025
-// ---------------------------------- Module 002 Task 026
-// ---------------------------------- Module 002 Task 027
-// ---------------------------------- Module 002 Task 028
-// ---------------------------------- Module 002 Task 029
-// ---------------------------------- Module 002 Task 030
-// ---------------------------------- Module 002 Task 031
-// ---------------------------------- Module 002 Task 032
+// function findLongestWord(string) {
+//   // Change code below this line
+//   let array = string.split(' ');
+//   let longestWord = array[0];
+//   for (const index of array) {
+//     if (index.length > longestWord.length) {
+//       longestWord = index;
+//     }
+//   }
+//   return longestWord;
 
+//   // Change code above this line
+// }
+// console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
+// ---------------------------------- Module 002 Task 022
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(29, 34));
+// ---------------------------------- Module 002 Task 023
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   let array = [];
+//   for (const index of numbers) {
+//     if (index > value) {
+//       array.push(index);
+//     }
+//   }
+
+//   return array;
+//   // Change code above this line
+// }
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// ---------------------------------- Module 002 Task 024
+// function checkFruit(fruit) {
+//   const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+// console.log(checkFruit('mandarin'));
+// ---------------------------------- Module 002 Task 025
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   let array = [];
+//   for (const index of array1) {
+//     if (array2.includes(index)) {
+//       array.push(index);
+//     }
+//   }
+
+//   return array;
+//   // Change code above this line
+// }
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// ---------------------------------- Module 002 Task 026
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const index of order) {
+//     total += index;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+// ---------------------------------- Module 002 Task 027
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (const index of numbers) {
+//     if (index > value) {
+//       filteredNumbers.push(index);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+// ---------------------------------- Module 002 Task 028
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 3;
+// console.log(a, b, c, d, e);
+// ---------------------------------- Module 002 Task 029
+// function getEvenNumbers(start, end) {
+//   // Change code below this line
+//   let array = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       array.push(i);
+//     }
+//   }
+//   return array;
+// }
+// console.log(getEvenNumbers(3, 11));
+// ---------------------------------- Module 002 Task 030
+// const start = 6;
+// const end = 27;
+// let number;
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+// console.log(number);
+// ---------------------------------- Module 002 Task 031
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+//   return 0;
+//   // Change code above this line
+// }
+// console.log(findNumber(16, 35, 7));
+// ---------------------------------- Module 002 Task 032
+// function includes(array, value) {
+//   // Change code below this line
+//   for (const index of array) {
+//     if (index == value) {
+//       return true;
+//     }
+//   }
+//   return false;
+//   // Change code above this line
+// }
+// console.log(includes(['apple', 'plum', 'pear', 'orange'], 'plum'));
+// ------------------------------------------------------
+// ---------------------------------- Module 003 Task 001
+// const apartment = {
+//   imgUrl: 'https://via.placeholder.com/640x480',
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+//   tags: ['premium', 'promoted', 'top'],
+// };
+// console.log(apartment);
+// ---------------------------------- Module 003 Task 002
+// const apartment = {
+//   imgUrl: 'https://via.placeholder.com/640x480',
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+//   tags: ['premium', 'promoted', 'top'],
+
+//   owner: {
+//     name: 'Henry',
+//     phone: '982-126-1588',
+//     email: 'henry.carter@aptmail.com',
+//   },
+// };
+// console.log(apartment);
+// ---------------------------------- Module 003 Task 003
+// const apartment = {
+//   imgUrl: 'https://via.placeholder.com/640x480',
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+//   tags: ['premium', 'promoted', 'top'],
+// };
+// //Change code below this line
+// const aptRating = apartment.rating;
+// const aptDescr = apartment.descr;
+// const aptPrice = apartment.price;
+// const aptTags = apartment.tags;
+// // Change code above this line
+// console.log(aptRating);
+// console.log(aptDescr);
+// console.log(aptPrice);
+// console.log(aptTags);
+// ---------------------------------- Module 003 Task 004
+const apartment = {
+  imgUrl: 'https://via.placeholder.com/640x480',
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+  tags: ['premium', 'promoted', 'top'],
+  owner: {
+    name: 'Henry',
+    phone: '982-126-1588',
+    email: 'henry.carter@aptmail.com',
+  },
+};
+
+// Change code below this line
+const ownerName = apartment.owner.name;
+const ownerPhone = apartment.owner.phone;
+const ownerEmail = apartment.owner.email;
+const numberOfTags = apartment.tags.length;
+const firstTag = apartment.tags[0];
+const lastTag = apartment.tags[apartment.tags.length];
+console.log(ownerName);
+console.log(ownerPhone);
+console.log(ownerEmail);
+console.log(numberOfTags);
+console.log(firstTag);
+console.log(lastTag);
+// Change code above this line
+// ---------------------------------- Module 003 Task 005
+// ---------------------------------- Module 003 Task 006
+// ---------------------------------- Module 003 Task 007
+// ---------------------------------- Module 003 Task 008
+// ---------------------------------- Module 003 Task 009
+// ---------------------------------- Module 003 Task 010
+// ---------------------------------- Module 003 Task 011
+// ---------------------------------- Module 003 Task 012
+// ---------------------------------- Module 003 Task 013
+// ---------------------------------- Module 003 Task 014
+// ---------------------------------- Module 003 Task 015
+// ---------------------------------- Module 003 Task 016
+// ---------------------------------- Module 003 Task 017
+// ---------------------------------- Module 003 Task 018
+// ---------------------------------- Module 003 Task 019
+// ---------------------------------- Module 003 Task 020
+// ---------------------------------- Module 003 Task 021
+// ---------------------------------- Module 003 Task 022
+// ---------------------------------- Module 003 Task 023
+// ---------------------------------- Module 003 Task 024
+// ---------------------------------- Module 003 Task 025
+// ---------------------------------- Module 003 Task 026
+// ---------------------------------- Module 003 Task 027
+// ---------------------------------- Module 003 Task 028
+// ---------------------------------- Module 003 Task 029
+// ---------------------------------- Module 003 Task 030
+// ---------------------------------- Module 003 Task 031
+// ---------------------------------- Module 003 Task 032
+// ---------------------------------- Module 003 Task 033
+// ---------------------------------- Module 003 Task 034
+// ---------------------------------- Module 003 Task 035
+// ---------------------------------- Module 003 Task 036
+// ---------------------------------- Module 003 Task 037
+// ---------------------------------- Module 003 Task 038
+// ---------------------------------- Module 003 Task 039
+// ---------------------------------- Module 003 Task 040
+// ---------------------------------- Module 003 Task 041
 // ------------------------------------------------------
 console.log('JS - The End.');

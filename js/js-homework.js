@@ -932,6 +932,17 @@ function countProps(object) {
   // Change code above this line
 }
 console.log(countProps(apartment));
+
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
+//   const keys = Object.keys(object);
+//   for (const key of keys) {
+//     propCount += 1;
+//   }
+//   return propCount;
+//   // Change code above this line
+// }
 // ---------------------------------- Module 003 Task 015
 // ---------------------------------- Module 003 Task 016
 // ---------------------------------- Module 003 Task 017

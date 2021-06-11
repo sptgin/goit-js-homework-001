@@ -1223,13 +1223,82 @@ console.log(message);
 // }
 // console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
 // ---------------------------------- Module 003 Task 034
+// const bookShelf = {
+//   // Change code below this line
+//   books: ['The last kingdom', 'The guardian of dreams'],
+//   getBooks() {
+//     return 'Returning all books';
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
 
+//   // Change code above this line
+// };
 // ---------------------------------- Module 003 Task 035
+// const bookShelf = {
+//   books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(bookIndex, 1, newName);
+
+//     // Change code above this line
+//   },
+// };
 // ---------------------------------- Module 003 Task 036
+// const atTheOldToad = {
+//   // Change code below this line
+//   potions: [],
+
+//   // Change code above this line
+// };
 // ---------------------------------- Module 003 Task 037
+// const atTheOldToad = {
+//   // Change code below this line
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   // Change code above this line
+// };
 // ---------------------------------- Module 003 Task 038
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName);
+//     // Change code above this line
+//   },
+// };
 // ---------------------------------- Module 003 Task 039
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     const potionIndex = this.potions.indexOf(potionName);
+//     this.potions.splice(potionIndex, 1);
+//     // Change code above this line
+//   },
+// };
 // ---------------------------------- Module 003 Task 040
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//     const potionIndex = this.potions.indexOf(oldName);
+//     this.potions.splice(potionIndex, 1, newName);
+//     // Change code above this line
+//   },
+// };
 // ---------------------------------- Module 003 Task 041
+
 // ------------------------------------------------------
 console.log('JS - The End.');

@@ -1174,10 +1174,56 @@ console.log(message);
 // // Change code below this line
 // const finalSettings = { ...defaultSettings, ...overrideSettings };
 // ---------------------------------- Module 003 Task 030
+// function makeTask(data) {
+//   const completed = false;
+//   const category = 'General';
+//   const priority = 'Normal';
+//   // Change code below this line
+//   return { completed, category, priority, ...data };
+//   // Change code above this line
+// }
 // ---------------------------------- Module 003 Task 031
+// function add(...args) {
+//   // Change code above this line
+//   let total = 0;
+
+//   for (const i in args) {
+//     total += args[i];
+//   }
+//   return total;
+// }
+// console.log(add(74, 11, 62, 46, 12, 36));
 // ---------------------------------- Module 003 Task 032
+// Change code below this line
+// function addOverNum(minNumber, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (arg > minNumber) {
+//       total += arg;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
 // ---------------------------------- Module 003 Task 033
+// Change code below this line
+// function findMatches(array, ...args) {
+//   const matches = []; // Don't change this line
+
+//   for (const arg of args) {
+//     if (array.includes(arg)) {
+//       matches.push(arg);
+//     }
+//   }
+//   // Change code above this line
+//   return matches;
+// }
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
 // ---------------------------------- Module 003 Task 034
+
 // ---------------------------------- Module 003 Task 035
 // ---------------------------------- Module 003 Task 036
 // ---------------------------------- Module 003 Task 037

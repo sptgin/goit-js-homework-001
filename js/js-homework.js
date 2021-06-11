@@ -1299,6 +1299,73 @@ console.log(message);
 //   },
 // };
 // ---------------------------------- Module 003 Task 041
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Speed potion', price: 460 },
+//     { name: 'Dragon breath', price: 780 },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     const { potions } = atTheOldToad;
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     const { potions } = atTheOldToad;
+//     if (this.potions.includes(potionName)) {
+//       return `Potion ${potionName} is already equipped!`;
+//     }
 
+//     this.potions.push(potionName);
+//   },
+
+//   removePotion(potionName) {
+//     const { potions } = atTheOldToad;
+
+//     for (const object of potions) {
+//       if (object.name === potionName) {
+//         const potionIndex = potions.indexOf(object);
+
+//         return this.potions.splice(potionIndex, 1);
+//       }
+//     }
+//   },
+
+//   updatePotionName(oldName, newName) {
+//     const { potions } = atTheOldToad;
+
+//     for (let object of potions) {
+//       if (object.name === oldName) {
+//         object.name = newName;
+//         break;
+//       }
+//     }
+//     return potions;
+//   },
+
+//   // Change code above this line
+// };
+// console.log(
+//   atTheOldToad.updatePotionName('Stone skin', 'Invulnerability potion'),
+// );
+// console.log(atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'));
+// ---------------------------------- Module 004 Task 001
+// function makePizza() {
+//   return 'Ваша пицца готовится, ожидайте.';
+// }
+// // Пиши код ниже этой строки
+
+// const result = makePizza();
+// const pointer = makePizza;
+// ---------------------------------- Module 004 Task 002
+
+// ---------------------------------- Module 004 Task 003
+// ---------------------------------- Module 004 Task 004
+// ---------------------------------- Module 004 Task 005
+// ---------------------------------- Module 004 Task 006
+// ---------------------------------- Module 004 Task 007
+// ---------------------------------- Module 004 Task 008
+// ---------------------------------- Module 004 Task 009
+// ---------------------------------- Module 004 Task 010
 // ------------------------------------------------------
 console.log('JS - The End.');

@@ -1556,7 +1556,114 @@ console.log(message);
 // );
 // console.log(secondInvoke);
 // // Почта poly@hotmail.de удалена из рассылки.
-
 // console.log(service.mailingList); // ['mango@mail.com', 'ajax@jmail.net', 'kiwi@mail.uk']
+// ---------------------------------- Module 005 Task 001
+// const parent = {
+//   name: 'Stacey',
+//   surname: 'Moore',
+//   age: 54,
+//   heritage: 'Irish',
+// };
+// // Пиши код ниже этой строки
+
+// const child = Object.create(parent);
+
+// // Пиши код выше этой строки
+// child.name = 'Jason';
+// child.age = 27;
+// ---------------------------------- Module 005 Task 002
+// const ancestor = {
+//   name: 'Paul',
+//   age: 83,
+//   surname: 'Dawson',
+//   heritage: 'Irish'
+// };
+// // Пиши код ниже этой строки
+
+// const parent = Object.create(ancestor);
+// parent.name = 'Stacey';
+// parent.surname = 'Moore';
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = 'Jason';
+// child.age = 27;
+
+// // Пиши код выше этой строки
+// ---------------------------------- Module 005 Task 003
+// function Car(brand, model, price) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+// }
+// ---------------------------------- Module 005 Task 004
+// function Car({ brand, model, price }) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+// }
+// ---------------------------------- Module 005 Task 005
+// function Car({ brand, model, price }) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+// }
+// Car.prototype.getPrice = function () {
+//   return this.price;
+// };
+// Car.prototype.changePrice = function (newPrice) {
+//   this.price = newPrice;
+// };
+// ---------------------------------- Module 005 Task 006
+// function Storage(items) {
+//   this.items = items;
+// }
+// Storage.prototype.getItems = function () {
+//   return this.items;
+// };
+// Storage.prototype.addItem = function (newItem) {
+//   this.items.push(newItem);
+// };
+// Storage.prototype.removeItem = function (item) {
+//   for (const itemI of this.items) {
+//     if (itemI == item) {
+//       this.items.splice(this.items.indexOf(itemI), 1);
+//       return;
+//     }
+//   }
+// };
+// // Пиши код выше этой строки
+// const storage = new Storage(['Нанитоиды', 'Пролонгер', 'Антигравитатор']);
+// console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор"]
+// storage.addItem('Дроид');
+// console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор", "Дроид"]
+// storage.removeItem('Пролонгер');
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Дроид"]
+// ---------------------------------- Module 005 Task 007
+
+// ---------------------------------- Module 005 Task 008
+
+// ---------------------------------- Module 005 Task 009
+
+// ---------------------------------- Module 005 Task 010
+
+// ---------------------------------- Module 005 Task 011
+
+// ---------------------------------- Module 005 Task 012
+
+// ---------------------------------- Module 005 Task 013
+
+// ---------------------------------- Module 005 Task 014
+
+// ---------------------------------- Module 005 Task 015
+
+// ---------------------------------- Module 005 Task 016
+
+// ---------------------------------- Module 005 Task 017
+
+// ---------------------------------- Module 005 Task 018
+
+// ---------------------------------- Module 005 Task 019
+
 // ------------------------------------------------------
 console.log('JS - The End.');

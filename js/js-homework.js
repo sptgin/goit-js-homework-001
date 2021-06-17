@@ -1847,10 +1847,283 @@ console.log(message);
 // console.log(Car.checkPrice(audi.price)); // Всё хорошо, цена в порядке.
 // console.log(Car.checkPrice(bmw.price)); // Внимание! Цена превышает допустимую.
 // ---------------------------------- Module 005 Task 017
+// class User {
+//   email;
 
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// // Пиши код ниже этой строки
+// class Admin extends User {
+//   static AccessLevel = { BASIC: 'basic', SUPERUSER: 'superuser' };
+// }
 // ---------------------------------- Module 005 Task 018
+// class User {
+//   email;
 
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User {
+//   // Пиши код ниже этой строки
+//   accessLevel;
+//   static AccessLevel = {
+//     BASIC: 'basic',
+//     SUPERUSER: 'superuser',
+//   };
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+//   // Пиши код выше этой строки
+// }
+
+// const mango = new Admin({
+//   email: 'mango@mail.com',
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // mango@mail.com
+// console.log(mango.accessLevel); // superuser
 // ---------------------------------- Module 005 Task 019
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Пиши код ниже этой строки
+//   blacklistedEmails;
+//   static AccessLevel = {
+//     BASIC: 'basic',
+//     SUPERUSER: 'superuser',
+//   };
+
+//   accessLevel;
+
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//     this.blacklistedEmails = [];
+//   }
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.includes(email);
+//   }
+
+//   // Пиши код выше этой строки
+// }
+
+// const mango = new Admin({
+//   email: 'mango@mail.com',
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // mango@mail.com
+// console.log(mango.accessLevel); // superuser
+// mango.blacklist('poly@mail.com');
+// console.log(mango.blacklistedEmails); // 'poly@mail.com'
+// console.log(mango.isBlacklisted('mango@mail.com')); //  false
+// console.log(mango.isBlacklisted('poly@mail.com')); // true
+// ---------------------------------- Module 006 Task 001
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Пиши код ниже этой строки
+
+//   //for (let i = 0; i < orderedItems.length; i += 1) {
+//   //  totalPrice += orderedItems[i];
+//   //}
+
+//   orderedItems.forEach(element => {
+//     totalPrice += element;
+//   });
+//   // Пиши код выше этой строки
+//   return totalPrice;
+// }
+// ---------------------------------- Module 006 Task 002
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Пиши код ниже этой строки
+
+//   //for (let i = 0; i < numbers.length; i += 1) {
+//   //  if (numbers[i] > value) {
+//   //    filteredNumbers.push(numbers[i]);
+//   //  }
+//   //}
+//   numbers.forEach(element => {
+//     if (element > value) {
+//       filteredNumbers.push(element);
+//     }
+//   });
+//   // Пиши код выше этой строки
+//   return filteredNumbers;
+// }
+// ---------------------------------- Module 006 Task 003
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Пиши код ниже этой строки
+
+//   //for (let i = 0; i < firstArray.length; i += 1) {
+//   //  if (secondArray.includes(firstArray[i])) {
+//   //    commonElements.push(firstArray[i]);
+//   //  }
+//   //}
+
+//   firstArray.forEach(element => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   return commonElements;
+//   // Пиши код выше этой строки
+// }
+// ---------------------------------- Module 006 Task 004
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   // Пиши код выше этой строки
+//   return quantity * pricePerItem;
+// };
+// ---------------------------------- Module 006 Task 005
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+// ---------------------------------- Module 006 Task 006
+// const calculateTotalPrice = orderedItems => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(item => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// };
+// ---------------------------------- Module 006 Task 007
+// Пиши код ниже этой строки
+// const filterArray = (numbers, value) => {
+//     const filteredNumbers = [];
+
+//     numbers.forEach(number => {
+//       if (number > value) {
+//         filteredNumbers.push(number);
+//       }
+//     });
+
+//     // Пиши код выше этой строки
+//     return filteredNumbers;
+//   }
+// ---------------------------------- Module 006 Task 008
+// Пиши код ниже этой строки
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+//   firstArray.forEach(element => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+//   // Пиши код выше этой строки
+//   return commonElements;
+// };
+// ---------------------------------- Module 006 Task 009
+
+// ---------------------------------- Module 006 Task 010
+
+// ---------------------------------- Module 006 Task 011
+
+// ---------------------------------- Module 006 Task 012
+
+// ---------------------------------- Module 006 Task 013
+
+// ---------------------------------- Module 006 Task 014
+
+// ---------------------------------- Module 006 Task 015
+
+// ---------------------------------- Module 006 Task 016
+
+// ---------------------------------- Module 006 Task 017
+
+// ---------------------------------- Module 006 Task 018
+
+// ---------------------------------- Module 006 Task 019
+
+// ---------------------------------- Module 006 Task 020
+
+// ---------------------------------- Module 006 Task 021
+
+// ---------------------------------- Module 006 Task 022
+
+// ---------------------------------- Module 006 Task 023
+
+// ---------------------------------- Module 006 Task 024
+
+// ---------------------------------- Module 006 Task 025
+
+// ---------------------------------- Module 006 Task 026
+
+// ---------------------------------- Module 006 Task 027
+
+// ---------------------------------- Module 006 Task 028
+
+// ---------------------------------- Module 006 Task 029
+
+// ---------------------------------- Module 006 Task 030
+
+// ---------------------------------- Module 006 Task 031
+
+// ---------------------------------- Module 006 Task 032
+
+// ---------------------------------- Module 006 Task 033
+
+// ---------------------------------- Module 006 Task 034
+
+// ---------------------------------- Module 006 Task 035
+
+// ---------------------------------- Module 006 Task 036
+
+// ---------------------------------- Module 006 Task 037
+
+// ---------------------------------- Module 006 Task 038
+
+// ---------------------------------- Module 006 Task 039
+
+// ---------------------------------- Module 006 Task 040
+
+// ---------------------------------- Module 006 Task 041
+
+// ---------------------------------- Module 006 Task 042
+
+// ---------------------------------- Module 006 Task 043
+
+// ---------------------------------- Module 006 Task 044
 
 // ------------------------------------------------------
+
 console.log('JS - The End.');

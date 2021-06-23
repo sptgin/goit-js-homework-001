@@ -2337,14 +2337,14 @@ console.log(message);
 
 // const getFriends = users => {
 //   let arrayFriends = [];
-//   let arrayFriendsFilterd = [];
+//   let arrayFriendsFiltered = [];
 //   for (const user of users) {
 //     arrayFriends.push(...user.friends);
 //   }
-//   arrayFriendsFilterd = arrayFriends.filter(
+//   arrayFriendsFiltered = arrayFriends.filter(
 //     (item, index) => arrayFriends.indexOf(item) === index,
 //   );
-//   return arrayFriendsFilterd;
+//   return arrayFriendsFiltered;
 // };
 
 // console.log(getFriends(users));
@@ -2362,45 +2362,248 @@ console.log(message);
 // };
 // // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 024
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'Сон смешного человека';
+// const AUTHOR = 'Роберт Шекли';
+// // Пиши код ниже этой строки
 
+// const bookWithTitle = books.find((book) => book.title === BOOK_TITLE);
+// const bookByAuthor = books.find((book) => book.author === AUTHOR);
 // ---------------------------------- Module 006 Task 025
-
+// // Пиши код ниже этой строки
+// const getUserWithEmail = (users, email) => {
+//   return users.find((user) => user.email === email);
+// };
+// // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 026
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
 
+// const eachElementInFirstIsEven = firstArray.every((value) => value % 2 === 0 );
+// const eachElementInFirstIsOdd = firstArray.every((value) => value % 2 !== 0 );
+
+// const eachElementInSecondIsEven = secondArray.every((value) => value % 2 === 0 );
+// const eachElementInSecondIsOdd = secondArray.every((value) => value % 2 !== 0 );
+
+// const eachElementInThirdIsEven = thirdArray.every((value) => value % 2 === 0 );
+// const eachElementInThirdIsOdd = thirdArray.every((value) => value % 2 !== 0 );
 // ---------------------------------- Module 006 Task 027
-
+// // Пиши код ниже этой строки
+// const isEveryUserActive = (users) => {
+//    return users.every((user) => user.isActive);
+// };
+// // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 028
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
 
+// const anyElementInFirstIsEven = firstArray.some((value) => value % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some((value) => value % 2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some((value) => value % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some((value) => value % 2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some((value) => value % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some((value) => value % 2 !== 0);
 // ---------------------------------- Module 006 Task 029
-
+// Пиши код ниже этой строки
+// const isAnyUserActive = users => {
+//    return users.some((user) => user.isActive);
+// };
+// // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 030
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Пиши код ниже этой строки
 
+// const totalPlayTime = playtimes.reduce((total, element) => { return total + element});
+
+// // Пиши код выше этой строки
+// const averagePlayTime = totalPlayTime / playtimes.length;
 // ---------------------------------- Module 006 Task 031
-
+// const players = [
+//   { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => { return (total + (player.playtime / player.gamesPlayed)) }, 0);
 // ---------------------------------- Module 006 Task 032
-
+// // Пиши код ниже этой строки
+// const calculateTotalBalance = users => {
+//    return users.reduce((total, users) => {return total + users.balance},0);
+// };
+// // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 033
-
+// // Пиши код ниже этой строки
+// const getTotalFriendCount = users => {
+//   return users.reduce((totalFriends, users) =>{return totalFriends + users.friends.length},0); 
+// };
+// // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 034
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский'
+// ];
+// // Пиши код ниже этой строки
 
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
 // ---------------------------------- Module 006 Task 035
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
 
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
 // ---------------------------------- Module 006 Task 036
-
+// const authors = [
+//     'Ли Танит',
+//     'Бернард Корнуэлл',
+//     'Роберт Шекли',
+//     'Федор Достоевский',
+//     'Говард Лавкрафт'
+//   ];
+//   // Пиши код ниже этой строки
+  
+//   const authorsInAlphabetOrder = [...authors].sort((a,b) => a.localeCompare(b));
+  
+//   const authorsInReversedOrder = [...authors].sort((a,b) => b.localeCompare(a));
 // ---------------------------------- Module 006 Task 037
-
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+// ];
+// // Пиши код ниже этой строки
+// const sortedByAuthorName = [...books].sort((firstAuthor, secondAuthor) => firstAuthor.author.localeCompare(secondAuthor.author));
+// const sortedByReversedAuthorName = [...books].sort((firstAuthor, secondAuthor) => secondAuthor.author.localeCompare(firstAuthor.author));
+// const sortedByAscendingRating = [...books].sort((firstRating, secondRating) => firstRating.rating - secondRating.rating);
+// const sortedByDescentingRating = [...books].sort((firstRating, secondRating) => secondRating.rating - firstRating.rating);
 // ---------------------------------- Module 006 Task 038
-
+// const sortByAscendingBalance = users => {
+//    return users.sort((minBalance, maxBalance) => minBalance.balance - maxBalance.balance);
+// };
 // ---------------------------------- Module 006 Task 039
-
+// // Пиши код ниже этой строки
+// const sortByDescendingFriendCount = users => {
+//   return [...users].sort((maxFriendCount, minFriendCount) => minFriendCount.friends.length - maxFriendCount.friends.length );
+// };
+// // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 040
-
+// // Пиши код ниже этой строки
+// const sortByName = users => {
+//    return [...users].sort((a, b) => a.name.localeCompare(b.name));
+// };
+// // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 041
-
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+//   { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 }
+// ];
+// const MIN_BOOK_RATING = 8;
+// const names = books.filter((book) => book.rating > MIN_BOOK_RATING).map((book) => book.author).sort((a, b) => a.localeCompare(b));
 // ---------------------------------- Module 006 Task 042
-
+// // Пиши код ниже этой строки
+// const getNamesSortedByFriendCount = users => {
+//       return [...users].sort((maxFriendCount, minFriendCount) =>  maxFriendCount.friends.length - minFriendCount.friends.length ).map((user) => user.name); 
+// };
+// // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 043
-
+users = [
+  {
+    name: 'Moore Hensley',
+    email: 'moorehensley@indexia.com',
+    eyeColor: 'blue',
+    friends: ['Sharron Pace'],
+    isActive: false,
+    balance: 2811,
+    gender: 'male'
+  },
+  {
+    name: 'Sharlene Bush',
+    email: 'sharlenebush@tubesys.com',
+    eyeColor: 'blue',
+    friends: ['Briana Decker', 'Sharron Pace'],
+    isActive: true,
+    balance: 3821,
+    gender: 'female'
+  },
+  {
+    name: 'Ross Vazquez',
+    email: 'rossvazquez@xinware.com',
+    eyeColor: 'green',
+    friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+    isActive: false,
+    balance: 3793,
+    gender: 'male'
+  },
+  {
+    name: 'Elma Head',
+    email: 'elmahead@omatom.com',
+    eyeColor: 'green',
+    friends: ['Goldie Gentry', 'Aisha Tran'],
+    isActive: true,
+    balance: 2278,
+    gender: 'female'
+  },
+  {
+    name: 'Carey Barr',
+    email: 'careybarr@nurali.com',
+    eyeColor: 'blue',
+    friends: ['Jordan Sampson', 'Eddie Strong', 'Adrian Cross'],
+    isActive: true,
+    balance: 3951,
+    gender: 'male'
+  },
+  {
+    name: 'Blackburn Dotson',
+    email: 'blackburndotson@furnigeer.com',
+    eyeColor: 'brown',
+    friends: ['Jacklyn Lucas', 'Linda Chapman', 'Adrian Cross', 'Solomon Fokes'],
+    isActive: false,
+    balance: 1498,
+    gender: 'male'
+  },
+  {
+    name: 'Sheree Anthony',
+    email: 'shereeanthony@kog.com',
+    eyeColor: 'brown',
+    friends: ['Goldie Gentry', 'Briana Decker'],
+    isActive: true,
+    balance: 2764,
+    gender: 'female'
+  }
+]
+const getSortedFriends = users => {
+    //return users.map(user => user.friends);
+    return users.filter((item, index) => users.friends.indexOf(item) === index);
+};
+console.log(getSortedFriends(users));
 // ---------------------------------- Module 006 Task 044
 
 // ------------------------------------------------------

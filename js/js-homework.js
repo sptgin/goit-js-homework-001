@@ -2452,7 +2452,7 @@ console.log(message);
 // ---------------------------------- Module 006 Task 033
 // // Пиши код ниже этой строки
 // const getTotalFriendCount = users => {
-//   return users.reduce((totalFriends, users) =>{return totalFriends + users.friends.length},0); 
+//   return users.reduce((totalFriends, users) =>{return totalFriends + users.friends.length},0);
 // };
 // // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 034
@@ -2484,9 +2484,9 @@ console.log(message);
 //     'Говард Лавкрафт'
 //   ];
 //   // Пиши код ниже этой строки
-  
+
 //   const authorsInAlphabetOrder = [...authors].sort((a,b) => a.localeCompare(b));
-  
+
 //   const authorsInReversedOrder = [...authors].sort((a,b) => b.localeCompare(a));
 // ---------------------------------- Module 006 Task 037
 // const books = [
@@ -2530,82 +2530,31 @@ console.log(message);
 // ---------------------------------- Module 006 Task 042
 // // Пиши код ниже этой строки
 // const getNamesSortedByFriendCount = users => {
-//       return [...users].sort((maxFriendCount, minFriendCount) =>  maxFriendCount.friends.length - minFriendCount.friends.length ).map((user) => user.name); 
+//       return [...users].sort((maxFriendCount, minFriendCount) =>  maxFriendCount.friends.length - minFriendCount.friends.length ).map((user) => user.name);
 // };
 // // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 043
-users = [
-  {
-    name: 'Moore Hensley',
-    email: 'moorehensley@indexia.com',
-    eyeColor: 'blue',
-    friends: ['Sharron Pace'],
-    isActive: false,
-    balance: 2811,
-    gender: 'male'
-  },
-  {
-    name: 'Sharlene Bush',
-    email: 'sharlenebush@tubesys.com',
-    eyeColor: 'blue',
-    friends: ['Briana Decker', 'Sharron Pace'],
-    isActive: true,
-    balance: 3821,
-    gender: 'female'
-  },
-  {
-    name: 'Ross Vazquez',
-    email: 'rossvazquez@xinware.com',
-    eyeColor: 'green',
-    friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
-    isActive: false,
-    balance: 3793,
-    gender: 'male'
-  },
-  {
-    name: 'Elma Head',
-    email: 'elmahead@omatom.com',
-    eyeColor: 'green',
-    friends: ['Goldie Gentry', 'Aisha Tran'],
-    isActive: true,
-    balance: 2278,
-    gender: 'female'
-  },
-  {
-    name: 'Carey Barr',
-    email: 'careybarr@nurali.com',
-    eyeColor: 'blue',
-    friends: ['Jordan Sampson', 'Eddie Strong', 'Adrian Cross'],
-    isActive: true,
-    balance: 3951,
-    gender: 'male'
-  },
-  {
-    name: 'Blackburn Dotson',
-    email: 'blackburndotson@furnigeer.com',
-    eyeColor: 'brown',
-    friends: ['Jacklyn Lucas', 'Linda Chapman', 'Adrian Cross', 'Solomon Fokes'],
-    isActive: false,
-    balance: 1498,
-    gender: 'male'
-  },
-  {
-    name: 'Sheree Anthony',
-    email: 'shereeanthony@kog.com',
-    eyeColor: 'brown',
-    friends: ['Goldie Gentry', 'Briana Decker'],
-    isActive: true,
-    balance: 2764,
-    gender: 'female'
-  }
-]
-const getSortedFriends = users => {
-    //return users.map(user => user.friends);
-    return users.filter((item, index) => users.friends.indexOf(item) === index);
-};
-console.log(getSortedFriends(users));
+// const getSortedFriends = users => {
+//   let arrayFriends = [];
+//   let arrayFriendsFiltered = [];
+//   for (const user of users) {
+//     arrayFriends.push(...user.friends);
+//   }
+//   arrayFriendsFiltered = arrayFriends
+//     .sort()
+//     .filter((item, index) => arrayFriends.indexOf(item) === index);
+//   return arrayFriendsFiltered;
+// };
+// console.log(getSortedFriends(users));
 // ---------------------------------- Module 006 Task 044
-
+// const getTotalBalanceByGender = (users, gender) => {
+//   return [...users]
+//     .filter(user => user.gender === gender)
+//     .reduce((totalBalance, users) => {
+//       return totalBalance + users.balance;
+//     }, 0);
+// };
+// console.log(getTotalBalanceByGender(users, 'male'));
 // ------------------------------------------------------
 
 console.log('JS - The End.');

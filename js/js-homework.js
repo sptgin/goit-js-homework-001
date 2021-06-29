@@ -2347,6 +2347,14 @@ console.log(message);
 //   return arrayFriendsFiltered;
 // };
 
+//----------------------- вариант 2 ---------------------
+const getFriends = (users, friends) => {
+  const allFriends = users.flatMap(user => user.friends);
+  return allFriends.filter(
+    (friend, index, users) => users.indexOf(friend) === index,
+  );
+};
+//-------------------------------------------------------
 // console.log(getFriends(users));
 // ---------------------------------- Module 006 Task 022
 // // Пиши код ниже этой строки
@@ -2534,6 +2542,7 @@ console.log(message);
 // };
 // // Пиши код выше этой строки
 // ---------------------------------- Module 006 Task 043
+
 // const getSortedFriends = users => {
 //   let arrayFriends = [];
 //   let arrayFriendsFiltered = [];

@@ -2348,12 +2348,12 @@ console.log(message);
 // };
 
 //----------------------- вариант 2 ---------------------
-const getFriends = (users, friends) => {
-  const allFriends = users.flatMap(user => user.friends);
-  return allFriends.filter(
-    (friend, index, users) => users.indexOf(friend) === index,
-  );
-};
+// const getFriends = (users, friends) => {
+//   const allFriends = users.flatMap(user => user.friends);
+//   return allFriends.filter(
+//     (friend, index, users) => users.indexOf(friend) === index,
+//   );
+// };
 //-------------------------------------------------------
 // console.log(getFriends(users));
 // ---------------------------------- Module 006 Task 022
